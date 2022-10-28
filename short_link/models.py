@@ -24,7 +24,7 @@ class Link(Base):
 
         link = Link(**{
             'original_link': original_link,
-            'short_postfix': build_short_postfix(original_link),
+            'short_postfix': build_short_postfix(),
         })
         try:
             db_session.add(link)
